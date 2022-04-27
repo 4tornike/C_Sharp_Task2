@@ -8,15 +8,15 @@ namespace midTerm_Task
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Student student = new Student();
-            student.print();
+            Student student = new Student("tornike","beridze","computer science","mit","tornike@gmail.com",551995);
+            student.Print();
+            Student2 student2 = new Student2("tornike","beridze",100);
+            student2.Print();
+            Console.Write(String.Format("hello i am {0}",student));
         }
     }
-
-
-
 
 
     public class Student
@@ -57,18 +57,17 @@ namespace midTerm_Task
             this.phone = phone;
         }
 
-        public void print()
+        public void Print()
         {
             Console.WriteLine($"student name is {name} {surname},his on {course} course at {university} university." +
-                $"students emai: {email}" +
+                $"students email: {email}" +
                 $"students phone: {phone}");
         }
 
         public override string ToString()
         {
             return $"student {name} {surname} is on {course} course at {university} university.his/her email: {email}" +
-                $"his/her phone: {phone}" +
-                $"subject name is {_Subject.name}";
+                $"his/her phone: {phone}";
         }
 
 

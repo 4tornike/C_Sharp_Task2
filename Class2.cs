@@ -18,7 +18,7 @@ namespace midTerm_Task
             this.surname = surname;
         }
 
-        public void print()
+        public void Print()
         {
             Console.WriteLine($"human name is {name} {surname}");
         }
@@ -34,7 +34,7 @@ namespace midTerm_Task
             this.mark = mark;
         }
 
-        public void print()
+        public void Print()
         {
             Console.WriteLine($"human name is {name} {surname},he/she is student," +
                 $"his/her mark is {mark}");
@@ -57,7 +57,7 @@ namespace midTerm_Task
             return wage / hoursWorked;
         }
 
-        public void print() {
+        public void Print() {
             Console.WriteLine($"human name is {name} {surname},he/she is worker," +
                 $"his/her wage is {wage}" +
                 $"he/she works {hoursWorked} hours in a month");
